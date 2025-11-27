@@ -4,7 +4,7 @@
 ---
 
 ## 🌐 Live Demo  
-🔗 **Try the Prototype:** https://lnkd.in/gQa9xSWv  
+🔗 **Try the Prototype:** https://shorturl.at/2qCND
 > ⚠️ Hosted on *InfinityFree* — performance may fluctuate due to free-tier limitations.
 
 ---
