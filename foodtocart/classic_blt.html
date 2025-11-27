@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kal View Cafe</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="/output.css" rel="stylesheet">
+    
+</head>
+<body class="bg-gradient-to-t from-[#d1c49c] to-bgColour font-poppins">
+    <nav class="sticky top-0 z-50 px-4 py-2 font-poppins font-semibold flex items-center justify-between bg-bgColour text-primaryColour shadow-md">
+        <div id="logo" class="flex gap-2 w-fit">
+            <span class="items-center">
+                <img class="h-16" src="/assets/logoBig.png" alt="">
+            </span>
+        </div>
+        <div id="navoptions" class="text-lg flex gap-16 items-center">
+            <a href="#menu"><span class="mx-3">Menu</span></a>
+            <a href="#ourstory"><span class="mx-3">Our Story</span></a>
+            <a href="#contact"><span class="mx-3">Contact</span></a>
+            <form action="" method="post">
+                <a href=""><span class="mx-3">Orders</span></a>
+            </form>
+        </div>
+        <div id="cred" class="text-lg flex items-center">
+            <button class="mx-2">Login</button>
+            <button class="mx-2 border rounded-lg border-primaryColour p-2 hover:bg-primaryColour hover:text-white transition duration-300">Sign Up</button>
+        </div>
+    </nav>
+    <div class="flex">
+        <div class="bg-white p-10 rounded-lg shadow-lg max-w-md mx-auto mt-10">
+            <a href="/index.html"><h1 class="font-bold mb-3">Go Back</h1></a>
+            <form action="/add-to-cart" method="POST" class="space-y-6">
+                <div>
+                    <label for="item-name" class="block text-lg font-medium text-gray-700">Food Item Name</label>
+                    <input type="text" id="item-name" name="item_name" class="mt-2 p-3 block w-full border rounded-md shadow-sm focus:ring-primaryColour focus:border-primaryColour" value="Classic B.L.T." readonly>
+                </div>
+        
+                <!-- Food Item Description -->
+                <div>
+                    <label for="item-description" class="block text-lg font-medium text-gray-700">Description</label>
+                    <p id="item-description" name="item_description" rows="3" class="mt-2 p-3 block w-full border rounded-md shadow-sm focus:ring-primaryColour focus:border-primaryColour" readonly>A timeless American classic sandwich of crispy bacon, crisp lettuce, and ripe tomatoes on toasted bread.</p>
+                </div>
+        
+                <!-- Price -->
+                <div>
+                    <label for="item-price" class="block text-lg font-medium text-gray-700">Price ($)</label>
+                    <input type="number" id="item-price" name="item_price" class="mt-2 p-3 block w-full border rounded-md shadow-sm focus:ring-primaryColour focus:border-primaryColour" value="5.85" readonly>
+                </div>
+        
+                <!-- Quantity -->
+                <div>
+                    <label for="item-quantity" class="block text-lg font-medium text-gray-700">Quantity</label>
+                    <div class="flex items-center mt-2">
+                        <input type="number" id="item-quantity" name="item_quantity" class="p-3 border-t border-b w-16 text-center focus:ring-primaryColour focus:border-primaryColour" value="1" min="1" required>                    </div>
+                </div>
+        
+                <!-- Submit Button -->
+                <div class="flex justify-center">
+                    <button type="submit" class="px-5 py-3 text-white bg-primaryColour rounded-lg hover:bg-opacity-90 focus:ring-2 focus:ring-primaryColour focus:ring-offset-2 focus:outline-none">
+                        <i class="fa-solid fa-cart-shopping mr-2"></i>Add to Cart
+                    </button>
+                </div>
+            </form>
+        </div>
+        <img class="h-[600px] p-10 rounded-2xl  mt-10" src="/assets/menu/Classic B.L.T.png" >
+    </div>
+
+    
+    
+</body>
+<footer id="contact" class=" mt-9 bg-gradient-to-r from-[#976737] to-[#8e5527] text-white py-4">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <h2 class="text-xl font-bold">Kal View Cafe</h2>
+                <p class="text-white">Your favorite spot for great food and drinks.</p>
+            </div>
+            <div class="flex flex-col md:flex-row">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-lg font-bold">Contact Us</h3>
+                    <ul>
+                        <li>7000 College Way, Coldstream</li>
+                        <li>(123) 456-7890</li>
+                        <li>kalviewcafe@example.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-sm text-white mt-4">© 2024 Kal View Cafe. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="/script.js"></script>
+</html>
